@@ -92,6 +92,7 @@ class Router
     puts ' --                   -- '
   end
 
+  ## LOGIC START ###
   def rescue_qty(options = {})
     key_hash = Hash.new(0)
 
@@ -156,7 +157,9 @@ class Router
 
     success_hash
   end
+  ## LOGIC END ###
 
+  ## CART Builder START ###
   def cart_line_item(item_hash, product_array, cart, qty_user)
     @cart = cart
 
@@ -193,7 +196,9 @@ class Router
     puts "TOTAL               #{'%.2f' % @cart.round(2)}"
     puts '------------------------------------'
   end
+  ## CART Builder END ###
 
+  ## APP States ###
   def stop
     @running = false
   end
