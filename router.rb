@@ -26,6 +26,7 @@ class Router
     @cart = 0
   end
 
+  ## menus START ###
   def menu_manager
     puts ''
     puts 'What do you like to order ?'
@@ -46,26 +47,7 @@ class Router
     else puts 'Please choose an option'
     end
   end
-
-  def product_manager(action)
-    case action
-    when 1 then puts 'How Many Watermellons?'
-    when 2 then puts 'How Many Pineapples?'
-    when 3 then puts 'How Many Rockmelons?'
-    when 8 then stop
-    else puts 'Please choose an option'
-    end
-  end
-
-  def qty_manager(action)
-    case action
-    when 1 then puts 'How Many Watermellons?'
-    when 2 then puts 'How Many Pineapples?'
-    when 3 then puts 'How Many Rockmelons?'
-    when 8 then stop
-    else puts 'Please choose an option'
-    end
-  end
+  ## menus END ###
 
   def run
     puts 'Welcome to Fresho Food'
